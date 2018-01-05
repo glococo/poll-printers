@@ -1,7 +1,7 @@
 const snmp = require("net-snmp")
 const mail = require("nodemailer")
 const log  = (...v)=>console.log(...v)
-const sett = require("./setting.js")
+const sett = require("./settings.js")
 const transporter= mail.createTransport( sett.mailServer )
 
 const below = sett.below
